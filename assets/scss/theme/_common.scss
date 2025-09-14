@@ -37,7 +37,6 @@ img{
 .z-index-11{
 	z-index: 11;
 }
-<<<<<<< HEAD
 .br{
 	&-16{
 		border-radius: 16px;
@@ -52,8 +51,6 @@ img{
 		padding: 70px 0;
 	}
 }
-=======
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 .overflow-y-visible{
 	overflow-x: hidden;
 	overflow-y: visible;
@@ -70,7 +67,6 @@ img{
 	position: absolute;
 }
 
-<<<<<<< HEAD
 .tf-white{
 	color: var(--tf-white-color);
 }
@@ -83,79 +79,16 @@ img{
 	&-20{
 		font-size: 20px;
 	}
-=======
-.section-padding{
-	padding: 60px 0;
-	@media #{$xs}{
-           padding: 40px 0;
-         }
-	&-2{
-		padding: 100px 0;
-		@media #{$xs}{
-           padding: 50px 0;
-         }
-	}
-}
-.br{
-	&-16{
-		& > a{
-			& > img{
-				border-radius: 8px;
-			}
-		}
-		& > img{
-			border-radius: 8px;
-		}
-	}
-	&-32{
-		border-radius: 32px;
-	}
-	&-24{
-		border-radius: 24px;
-	}
-	}
-
-.tf-fs{
-	&-24{
-		font-size: 15px;
-	}
-	&-30{
-		font-size: 30px;
-	}
-}
-
-.tf-white{
-	color: var(--white-clr);
-}
-.mt{
-	&-100{
-		margin-top: 100px;
-	}
-	&-60{
-		margin-top: 60px;
-	}
-}
-.tf-upper{
-	text-transform: uppercase;
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 }
 
 .tf-slide-transtion {
 	-webkit-transition-timing-function: linear;
 	transition-timing-function: linear;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 .tf-brand-slide-element {
 	width: auto;
 	display: inline-block;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 .bg-fix{
 	background-repeat: no-repeat;
 	background-position: center center;

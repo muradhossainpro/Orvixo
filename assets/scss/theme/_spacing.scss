@@ -9,7 +9,6 @@
     - Margin & Padding
 -----------------------------------------*/
 /*-- Margin Top --*/
-<<<<<<< HEAD
 @for $i from 1 through 100 {
     .mt-#{1 * $i}{margin-top: 1px * $i;}
 }
@@ -19,61 +18,30 @@
 }
 /*-- Margin Left --*/
 @for $i from 1 through 100 {
-=======
-@for $i from 1 through 50 {
-    .mt-#{1 * $i}{margin-top: 1px * $i;}
-}
-/*-- Margin Bottom --*/
-@for $i from 1 through 50 {
-    .mb-#{1 * $i}{margin-bottom: 1px *$i;}
-}
-/*-- Margin Left --*/
-@for $i from 1 through 50 {
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     .ml-#{1 * $i}{margin-left: 1px * $i;}
 }
 
 /*-- Margin Right --*/
-<<<<<<< HEAD
 @for $i from 1 through 100 {
-=======
-@for $i from 1 through 50 {
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     .mr-#{1 * $i}{margin-right: 1px *$i;}
 }
 
 /*-- Padding Top --*/
-<<<<<<< HEAD
 @for $i from 1 through 100 {
-=======
-@for $i from 1 through 50 {
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     .pt-#{1 * $i}{padding-top: 1px *$i;}
 }
 
 /*-- Padding Bottom --*/
-<<<<<<< HEAD
 @for $i from 1 through 100 {
-=======
-@for $i from 1 through 50 {
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     .pb-#{1 * $i}{padding-bottom: 1px *$i;}
 }
 
 /*-- Padding Left --*/
-<<<<<<< HEAD
 @for $i from 1 through 100 {
-=======
-@for $i from 1 through 50 {
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     .pl-#{1 * $i}{padding-left: 1px *$i;}
 }
 
 /*-- Padding Right --*/
-<<<<<<< HEAD
 @for $i from 1 through 100 {
-=======
-@for $i from 1 through 50 {
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     .pr-#{1 * $i}{padding-right: 1px *$i;}
 }
