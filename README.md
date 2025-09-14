@@ -1,3 +1,0 @@
-# Murad
-# Orvixo
-# Orvixo
