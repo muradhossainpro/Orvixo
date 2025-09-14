@@ -1,6 +1,7 @@
 @use '../../utils' as *;
 
 /*----------------------------------------*/
+<<<<<<< HEAD
 /*  6.4 Contact
 /*----------------------------------------*/
 
@@ -86,10 +87,62 @@
             &__image{
                 & img{
                     transform: scale(1.08);
+=======
+/*  6.12 Services
+/*----------------------------------------*/
+
+.tfservices{
+    padding: 20px;
+    border: solid 1px var(--border-clr);
+    transition: .3s;
+    &__image{
+        & img{
+            transition: .8s;
+        }
+    }
+    &__content{
+        & p{
+            font-size: 14px;
+        }
+    }
+    &__title{
+        font-size: 20px;
+    }
+    &__btn{
+        color: var(--theme-clr-2);
+        @media #{$xs}{
+           margin-top: 20px;
+         }
+        &-2{
+            background: var(--smoke-clr);
+            padding: 6px 28px;
+            font-size: 18px;
+            border-radius: var(--border-radius);
+            font-family: var(--font-heading);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s;
+            & i{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    &:hover{
+        box-shadow: 0 40px 50px 0 rgba(4, 18, 31, 0.12);
+        & .tfservices{
+            &__title{
+                color: var(--theme-clr-2);
+            }
+            &__image{
+                & img{
+                    transform: scale(1.1);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
                 }
             }
         }
     }
+<<<<<<< HEAD
     &-swiper{
         color: var(--tf-white-color);
         background: #D8E5EB;
@@ -106,12 +159,107 @@
         }
         &-next{
             background-color: var(--tf-primary-color);
+=======
+    &__2{
+        margin-right: -1px;
+        margin-bottom: -1px;
+        border: 1px solid #57595C;
+        padding: 40px;
+        transition: 0.3s;
+        &:hover{
+            background-color: var(--smoke-clr);
+            & .tfservices__btn-2{
+                background-color: var(--theme-clr-3);
+            }
+        }
+        @media #{$xl}{
+              padding: 30px 15px;
+            }
+    }
+    &__3{
+        background: var(--border-clr);
+        padding: 8px;
+        border-radius: var(--border-radius);
+         &:hover{
+            & .tfservices{
+            &__arrow{
+                background-color: var(--theme-clr-2);
+                color: var(--black-clr);
+        }
+        &__image-2{
+            &::before{
+                opacity: 1;
+                visibility: visible;
+                bottom: 0;
+            }
+        }
+        }
+        }
+    }
+    &__list{
+        & ul{
+            list-style: none;
+            & li{
+                margin-bottom: 5px;
+                color: #57595c;
+                &::before{
+                    background-color: #57595c;
+                    content: "";
+                    height: 8px;
+                    width: 8px;
+                    display: inline-block;
+                    border-radius: 30px;
+                    margin-right: 10px;
+                    transform: translateY(-1px);
+                }
+            }
+        }
+    }
+    &__image{
+        &-2{
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: "";
+                background-color: rgba(1, 15, 28, 0.6);
+                bottom: -100%;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+            }
+        }
+    }
+    &__arrow{
+        border-radius: 50px;
+        background: var(--theme-clr);
+        height: 56px;
+        width: 56px;
+        line-height: 55px;
+        display: inline-block;
+        position: absolute;
+        bottom: 23%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 99;
+        & i{
+            color: var(--white-clr);
+            transform: rotate(-45deg);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
         }
     }
     &-widget{
         padding: 50px 30px;
         border-radius: 10px;
+<<<<<<< HEAD
         background-color: var(--tf-gray-color-2);
+=======
+        background-color: var(--smoke-clr);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
            @media #{$md}{
                      padding: 30px 15px;
                     } 
@@ -119,11 +267,19 @@
             & li{
                 list-style-type: none;
                 & a{
+<<<<<<< HEAD
                     background-color: var(--tf-white-color);
                     display: block;
                     font-weight: 500;
                     font-size: 16px;
                     color: var(--tf-black-color);
+=======
+                    background-color: var(--white-clr);
+                    display: block;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: var(--black-clr);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
                     position: relative;
                     padding: 20px 20px;
                     border-radius: 8px;
@@ -140,8 +296,13 @@
                         transform: translateY(-50%) rotate(-40deg);
                         }
                         &:hover{
+<<<<<<< HEAD
                             background-color: var(--tf-primary-color);
                             color: var(--tf-white-color);
+=======
+                            background-color: var(--theme-clr);
+                            color: var(--white-clr);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
                         }
                 }
                 &:not(:last-child){
@@ -157,7 +318,11 @@
                      padding: 30px 15px;
                     } 
             & span{
+<<<<<<< HEAD
                 color: var(--tf-white-color);    
+=======
+                color: var(--white-clr);    
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
                 font-size: 26px;
                 display: block;
                 font-weight: 700;
@@ -166,8 +331,13 @@
         &-feature{
             &-item{
                 & > span{
+<<<<<<< HEAD
                     background-color: var(--tf-gray-color-2);
                     color: var(--tf-secondary-color);
+=======
+                    background-color: var(--smoke-clr);
+                    color: var(--theme-clr-2);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
                     height: 20px;
                     width: 20px;
                     line-height: 20px;
@@ -192,5 +362,20 @@
                 }
             }
         }
+<<<<<<< HEAD
+=======
+        &-wrapper{
+            @media #{$sm,$xs}{
+                 margin-left: 0;
+            }
+        }
+    }
+    &__mb{
+        &-30{
+            @media #{$sm,$xs}{
+             margin-bottom: 30px;
+        }
+        }
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     }
 }

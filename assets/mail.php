@@ -40,7 +40,11 @@
 
         // FIXME: Update this to your desired email address.
 
+<<<<<<< HEAD
         $recipient = "mdmuradhossain6553@gmail.com";
+=======
+        $recipient = "mdmuraddev400@gmail.com";
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 
         // Set the email subject.
 

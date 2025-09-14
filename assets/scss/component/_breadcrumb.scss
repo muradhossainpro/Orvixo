@@ -1,7 +1,11 @@
 @use '../utils' as *;
 
 // /*----------------------------------------*/
+<<<<<<< HEAD
 // /*  6.4 Contact
+=======
+// /*  2.3 Breadcrumb
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 // /*----------------------------------------*/
 
 .tf-breadcrum{
@@ -13,11 +17,18 @@
             content: "";
             left: 0;
             top: 0;
+<<<<<<< HEAD
             z-index: 1;
             height: 100%;
             width: 100%;
             background-color: var(--tf-black-color);
             opacity: .7;
+=======
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(173deg, #4230D3 -16.2%, rgba(141, 29, 0, 0.8) 101.3%);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
         }
     }
     &-space{
@@ -28,6 +39,7 @@
         & span {
             margin: 0 2px;
             display: inline-block;
+<<<<<<< HEAD
             color: var(--tf-white-color);
             &.active{
                 & a{
@@ -40,6 +52,17 @@
                 &:hover{
                     color: var(--tf-primary-color);
                 }
+=======
+            color: var(--white-clr);
+            &.active{
+                & a{
+                    color: var(--theme-clr-3);
+                }
+            }
+            & a {
+                color: var(--white-clr);
+                font-size: 20px;
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
             }
             &.dvir{
                 margin: 0 2px;
@@ -52,21 +75,30 @@
             top: 23%;
             left: 10%;
             animation: tfupdown 1s infinite alternate;
+<<<<<<< HEAD
             z-index: 9;
+=======
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
         }
         &-2{
             position: absolute;
             top: 23%;
             right: 10%;
             animation: tfupdown 1s infinite alternate;
+<<<<<<< HEAD
             z-index: 9;
+=======
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
         }
         &-3{
             position: absolute;
             bottom: 10%;
             left: 48%;
             animation: tfupdown 1s infinite alternate;
+<<<<<<< HEAD
             z-index: 9;
+=======
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
             @media #{$xs}{
                 left: 42%;
                 }

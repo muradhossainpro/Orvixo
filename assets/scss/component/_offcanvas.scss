@@ -1,6 +1,7 @@
 @use '../utils' as *;
 
 // /*----------------------------------------*/
+<<<<<<< HEAD
 // /*  6.4 Contact
 // /*----------------------------------------*/
 
@@ -9,6 +10,15 @@
 	position: fixed;
 	z-index: 999;
 	background: var(--tf-white-color);
+=======
+// /*  2.6 Offcanvas
+// /*----------------------------------------*/
+
+.tf-offcanvas {
+	position: fixed;
+	z-index: 999;
+	background: var(--white-clr);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 	width: 400px;
 	right: 0;
 	top: 92px;

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Sass --watch C:\Users\HP\Documents\Orvixo\assets\scss\main.scss:C:\Users\HP\Documents\Orvixo\assets\css\style.css
+=======
+Sass --watch C:\Users\HP\Documents\Murad\assets\scss\main.scss:C:\Users\HP\Documents\Murad\assets\css\style.css
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42

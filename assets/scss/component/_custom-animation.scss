@@ -4,9 +4,14 @@
 /*  2.5 Custom Animation
 /*----------------------------------------*/
 
+<<<<<<< HEAD
 /* TF ANIMATE PULSE */ 
 
 @keyframes tf-animate-pulse{
+=======
+
+@keyframes animate-pulse{
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     0%{
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8),  0 0 0 0 rgba(255, 255, 255, 0.8);
     }
@@ -21,6 +26,7 @@
     }
 }
 
+<<<<<<< HEAD
 
 /* TF ANIMATE PULSE */ 
 
@@ -73,6 +79,9 @@
   }
 
 /* TF UPDOWN */
+=======
+/* tf updown */
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 @keyframes tfupdown {
 	0% {
 	  -webkit-transform: translateY(0);
@@ -91,7 +100,11 @@
 
 }
 
+<<<<<<< HEAD
 /* TF LEFTRIGHT */
+=======
+/* tf leftright */
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 
 @keyframes tfleftright {
 	0% {
@@ -110,7 +123,11 @@
 	}
 }
 
+<<<<<<< HEAD
 /* TF SKILINLEFT */
+=======
+/* tf skillInLeft */
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 
   .tfSkillInLeft {
     opacity: 0; /* Start invisible */
@@ -164,6 +181,7 @@
 }
 
 
+<<<<<<< HEAD
   /* tf FadeInDown */
   
   @keyframes tffadeInDown {
@@ -198,6 +216,11 @@
   }
 }
 
+=======
+
+  /* tf FadeInUp */
+  
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
 .tffadeInUp {
   opacity: 0; /* Start invisible */
   animation: tffadeInUp 2s ease-out forwards; /* 2 seconds duration, ease-out effect */
@@ -283,4 +306,8 @@
       clip-path: inset(0 0 0 0);
       opacity: 1;
     }
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42

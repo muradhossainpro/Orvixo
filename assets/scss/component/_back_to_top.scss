@@ -17,8 +17,13 @@
     line-height: 44px;
     text-align: center;
     border-radius: 50%;
+<<<<<<< HEAD
     color: var(--tf-white-color);
     background: linear-gradient(62deg, #aa28d9 0%, #4d3bbf 100%);
+=======
+    color: var(--black-clr);
+    background: var(--white-clr);
+>>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     transition: .3s;
     box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
     &.show{
