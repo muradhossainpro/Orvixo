@@ -1,0 +1,52 @@
+// @use '../../utils' as *;
+
+// /*----------------------------------------*/
+// /*  6.4 Contact
+// /*----------------------------------------*/
+
+
+.tf-header-search{
+    &-bar {
+	height: 400px;
+	position: fixed;
+	top: -100%;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+	background: var(--tf-white-color);
+    transition: .3s;
+    &.tf-search-open{
+        top: 0;
+    }
+}
+    &-form-box{
+    & form{
+        position: relative;
+            & button{
+                position: absolute;
+                right: 0;
+                top: 13px;
+                font-size: 17px;
+            }
+        }
+    }
+}
+.tf-search{
+    &-toggle{
+        &:hover{
+            color: var(--tf-secondary-color);
+        }
+    }
+    &-close {
+        position: absolute;
+        right: 50px;
+        top: 100px;
+        font-size: 50px;
+        width: 45px;
+        height: 45px;
+        &:hover{
+        transform: rotate(90deg);
+        color: var(--tf-primary-color);
+            }
+    }
+}

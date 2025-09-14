@@ -1,0 +1,196 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.1 About
+/*----------------------------------------*/
+
+.tf-about{
+        &-image{
+        &::after{
+            position: absolute;
+            top: 0;
+            left: -100%;
+            display: block;
+            content: "";
+            width: 50%;
+            height: 100%;
+            background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+            -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+            z-index: 1;
+        }
+    }
+    &-wrapper{
+        &-list{
+            display: inline-block;
+            margin-bottom: 20px;
+            & ul{
+                & li{
+                    list-style: none;
+                    float: left;
+                    width: 50%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    &:nth-child(even){
+                        padding-left: 30px;
+                    }
+                    & span{
+                       width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        background: var(--tf-secondary-color);
+                        border-radius: 30px;
+                        transform: translateY(-3px);
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+          &:hover{
+                & .tf-about-image{
+                    &::after{
+                        animation: shine 1.5s;
+                    }
+                }
+            }
+    }
+    &-shape{
+        &-1{
+            position: absolute;
+            bottom: -30%;
+            right: 32px;
+            z-index: 2;
+        }
+        &-2{
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            z-index: -1;
+            animation: tfleftright 1.5s infinite alternate;
+        }
+    }
+    &-exprence{
+        background: var(--tf-white-color);
+        box-shadow: 0 30px 50px 0 rgba(3, 4, 28, 0.1);
+        border-radius: 10px;
+        padding: 22px 30px 22px 30px;
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top: 40px;
+        z-index: 99;
+        animation: tfupdown 1s infinite alternate;
+        &-title{
+            font-size: 80px;
+            background: linear-gradient(59deg, #4d3bbf 24.6%, #aa28d9 79.44%);
+            background-clip: border-box;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+        & h6{
+            color: var(--tf-black-color);
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        &-2{
+            right: 0;
+        }
+    }
+    &-bar{
+        &-item{
+            & label{
+                color: var(--tf-black-color);
+                font-size: 15px;
+                font-weight: 500;
+                margin-bottom: 8px;
+                line-height: 1;
+            }
+            & .progress-bar{
+                background-color: var(--tf-primary-color);
+            }
+              & .progress, & .progress-stacked {
+                    height: 12px;
+                    background-color: transparent;
+                    border-radius: 4px;
+                }
+        }
+        &-outer{
+            border: 1px solid var(--tf-border-color);
+            padding: 3px;
+            border-radius: 5px;
+            position: relative;
+            & span{
+                &::before{
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 0 10px 10px 0;
+                    border-color: transparent var(--tf-secondary-color) transparent transparent;
+                    transform: rotate(0deg);
+                    content: "";
+                    position: absolute;
+                    top: 99%;
+                    right: 8px;
+                }
+            }
+        }
+        &-num{
+            position: absolute;
+            left: calc(25% - 31px);
+            top: -36px;
+            background: var(--tf-secondary-color);
+            color: var(--tf-white-color);
+            padding: 6px 5px;
+            font-size: 11px;
+            line-height: 1;
+            border-radius: 4px;
+        }
+    }
+    &-video{
+        & a{
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: -0.8px;
+            color: var(--tf-black-color);
+            & span{
+                font-size: 16px;
+                width: 54px;
+                height: 54px;
+                display: inline-block;
+                text-align: center;
+                line-height: 54px;
+                border-radius: 50%;
+                color: var(--tf-white-color);
+                background: var(--tf-secondary-color);
+                margin-right: 15px;
+                animation: tf-animate-pulse-2 3s linear infinite;
+            }
+        }
+    }
+    &-since{
+        color: var(--tf-white-color);
+        background: var(--tf-secondary-color);
+        border-radius: var(--tf-border-radius);
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        padding: 60px 10px;
+        z-index: 1;
+        width: 175px;
+        top: 35%;
+        transform: translateY(-35%);
+        animation: tfupdown 1s infinite alternate;
+        & h4{
+            color: var(--tf-white-color);
+            font-size: 28px;
+            margin: 0;
+        }
+    }
+}

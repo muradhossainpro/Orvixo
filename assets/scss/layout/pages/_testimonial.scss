@@ -1,0 +1,38 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.4 Contact
+/*----------------------------------------*/
+
+.tftestimonial{
+    background-color: var(--tf-white-color);
+    padding: 44px 40px;
+    &__rating{
+        & i{
+            color: var(--tf-primary-color);
+        }
+    }
+    &__author{
+        &-image{
+            & img{
+                border-radius: 50px;
+            }
+        }
+        &-name{
+            font-size: 20px;
+            margin-bottom: 5px;
+            letter-spacing: .5px;
+            font-family: var(--tf-ff-body);
+        }
+        &-bio{
+            & span{
+                color: var(--tf-gray-color);
+                letter-spacing: .5px;
+            }
+        }
+    }
+    &__quote{
+        color: var(--tf-secondary-color);
+        font-size: 30px;
+    }
+}

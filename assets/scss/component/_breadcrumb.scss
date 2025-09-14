@@ -1,0 +1,75 @@
+@use '../utils' as *;
+
+// /*----------------------------------------*/
+// /*  6.4 Contact
+// /*----------------------------------------*/
+
+.tf-breadcrum{
+    &-area{
+        background-size: cover;
+        background-repeat: no-repeat;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            background-color: var(--tf-black-color);
+            opacity: .7;
+        }
+    }
+    &-space{
+        padding-top: 240px;
+        padding-bottom: 140px;
+    }
+     &-list{
+        & span {
+            margin: 0 2px;
+            display: inline-block;
+            color: var(--tf-white-color);
+            &.active{
+                & a{
+                    color: var(--tf-secondary-color);
+                }
+            }
+            & a {
+                color: var(--tf-white-color);
+                font-size: 20px;
+                &:hover{
+                    color: var(--tf-primary-color);
+                }
+            }
+            &.dvir{
+                margin: 0 2px;
+            }
+        }
+    }
+    &-shape{
+        &-1{
+            position: absolute;
+            top: 23%;
+            left: 10%;
+            animation: tfupdown 1s infinite alternate;
+            z-index: 9;
+        }
+        &-2{
+            position: absolute;
+            top: 23%;
+            right: 10%;
+            animation: tfupdown 1s infinite alternate;
+            z-index: 9;
+        }
+        &-3{
+            position: absolute;
+            bottom: 10%;
+            left: 48%;
+            animation: tfupdown 1s infinite alternate;
+            z-index: 9;
+            @media #{$xs}{
+                left: 42%;
+                }
+        }
+    }
+}

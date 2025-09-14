@@ -1,0 +1,168 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.4 Contact
+/*----------------------------------------*/
+
+.tf-contact{
+    &-box{
+        background-color: var(--tf-white-color);
+        padding: 80px 80px 75px;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+    }
+    &-item{
+        background-color: var(--tf-white-color);
+        padding: 34px 105px 30px 30px;
+        border: 1px solid #E3E3E3;
+        border-radius: 5px;
+        &-icon{
+            color: var(--tf-primary-color);
+            font-size: 40px;
+        }
+    }
+    &-content{
+        &-title{
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+    }
+    &-input{
+        & input, textarea{
+            height: 80px;
+            background: var(--tf-white-color);
+            border: 1px solid #E3E3E3;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 16px;
+            padding: 25px;
+        }
+        & textarea{
+                height: 220px;
+        }
+    }
+    &-btn{
+        & button{
+            width: 100%;
+        }
+    }
+    &-form{
+        &-content{
+            &-2{
+            background: var(--tf-white-color);
+            padding: 50px 30px 40px 30px;
+            box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+            border-radius: var(--tf-border-radius);
+            margin-bottom: 30px;
+            }
+        }
+    }
+    &-image{
+        & img{
+            border-radius: var(--tf-border-radius);
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: auto;
+            bottom: auto;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            border-radius: var(--tf-border-radius);
+            background: linear-gradient(180deg, rgba(22, 36, 62, 0) 0%, #16243E 100%);
+        }
+    }
+    &-video{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 9;
+        &-btn{
+            font-size: 16px;
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            text-align: center;
+            line-height: 80px;
+            border-radius: 50%;
+            color: var(--tf-white-color);
+            background: var(--tf-secondary-color);
+            margin-right: 15px;
+            animation: tf-animate-pulse-2 3s linear infinite;
+            &:hover{
+                color: var(--tf-white-color);
+            }
+        }
+    }
+    &-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80%;
+        width: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+    &-info{
+        padding-top: 30px;
+        &-icon{
+            & a{
+                background: var(--tf-gray-color-2);
+                color: var(--tf-secondary-color);
+                height: 65px;
+                width: 65px;
+                display: inline-block;
+                line-height: 65px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 20px;
+                transition: all 0.3s ease-out 0s;
+            }
+        }
+        &-text{
+            & span{
+                color: var(--tf-gray-color);
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+        }
+        &-content{
+            &:hover{
+                & .tf-contact-info-icon{
+                    & a{
+                        background-color: var(--tf-primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tf-cta{
+    &-area{
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: auto;
+            bottom: auto;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: var(--tf-black-color);
+            opacity: 0.4;
+        }
+    }
+    &-padding{
+        padding: 140px 0;
+    }
+}

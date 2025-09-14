@@ -1,0 +1,272 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.4 Contact
+/*----------------------------------------*/
+
+.tfportfolio{
+    position: relative;
+    margin-bottom: 30px;
+    &__image{
+        & img{
+            width: 100%;
+        }
+        &-2{
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px 8px 0 0;
+             & img{
+                width: 100%;
+                border-radius: 8px 8px 0 0;
+                transition: 0.6s;
+             }
+             &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                right: auto;
+                bottom: auto;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(3.65deg, #0E1E2A 5.86%, rgba(14, 30, 42, 0) 82.23%);
+                border-radius: 5px;
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.2s ease-in-out;
+             }
+        }
+        &-3{
+            border-radius: var(--tf-border-radius);
+            & img{
+                border-radius: var(--tf-border-radius);
+            }
+        }
+    }
+    &__text{
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        padding: 20px;
+        z-index: 22;
+        right: 0;
+        background: var(--tf-white-color);
+        margin: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-out 0s;
+        & h6{
+            font-weight: 400;
+            color: #777;
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+    &__title{
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        &-2{
+            &:hover{
+                color: var(--tf-primary-color);
+            }
+        }
+        &-3{
+            color: var(--tf-white-color);
+            &:hover{
+                color: var(--tf-secondary-color);
+            }
+        }
+    }
+    &__plus{
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        & a{
+            height: 50px;
+            width: 50px;
+            line-height: 48px;
+            text-align: center;
+            border-radius: 50%;
+            border: 2px solid #eee;
+            font-size: 15px;
+            color: #111;
+            display: inline-block;
+            &:hover{
+                color: var(--tf-white-color);
+                background-color: var(--tf-primary-color);
+            }
+        }
+    }
+    &-filter{
+        & button{
+            display: inline-block;
+            font-size: 24px;
+            padding: 0px 10px;
+            margin: 0 10px;
+            text-transform: uppercase;
+            &.active{
+                color: var(--tf-primary-color);
+            }
+        }
+        &-2{
+            & button{
+                background-color: var(--tf-gray-color-2);
+                color: var(--tf-black-color);
+                padding: 15px 30px;
+                border-radius: 30px;
+                &.active{
+                    background-color: var(--tf-black-color);
+                    color: var(--tf-primary-color);
+                }
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        background-color: var(--tf-black-color);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        opacity: .4;
+        border-radius: 16px;
+        transition: .3s;
+     }
+    &:hover{
+        &::before{
+            opacity: 0;
+        }
+        & .tfportfolio{
+        &__text{
+            opacity: 1;
+            visibility: visible;
+            bottom: 0;
+        }
+        }
+    }
+    &__2{
+        background-color: var(--tf-gray-color-2);
+        border-radius: var(--tf-border-radius);
+        &:hover{
+            & .tfportfolio{
+                &__image{
+                &-2{
+                    & img{
+                        transform: scale(1.1);
+                    }
+                    &::before{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                }
+                &__btn{
+                    left: 70%;
+                    top: 15%;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    &__3{
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: auto;
+            bottom: auto;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(3.65deg, #0E1E2A 5.86%, rgba(14, 30, 42, 0) 82.23%);
+            border-radius: 5px;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease-in-out;
+        }
+        &:hover{
+            &::before{
+                opacity: 1;
+                visibility: visible;
+            }
+            & .tfportfolio__content-2{
+                opacity: 1;
+                visibility: visible;
+                bottom: 20px;
+            }
+        }
+    }
+    &__content{
+        padding: 20px 20px 30px;
+        & span{
+            background: var(--tf-white-color);
+            display: inline-block;
+            border-radius: var(--tf-border-radius);
+            font-size: 16px;
+            font-weight: 400;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+        }
+        &-2{
+            position: absolute;
+            bottom: -20px;
+            left: 40px;
+            right: 40px;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
+            z-index: 9;
+            & span{
+                color: var(--tf-white-color);
+            }
+        }
+    }
+    &__btn{
+        color: var(--tf-black-color);
+        background: var(--tf-white-color);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s;
+        &:hover{
+            color: var(--tf-white-color);
+            background-color: var(--tf-primary-color);
+        }
+        & i{
+            transform: rotate(-45deg);
+        }
+    }
+    &-details{
+        &-wrap{
+            background: var(--tf-gray-color-2);
+            padding: 45px 50px;
+        }          
+    &-right{
+            & label{
+                font-size: 18px;
+                color: var(--tf-black-color);
+                display: block;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+            }
+            & span{
+                font-size: 22px;
+            }
+        }
+    }
+}

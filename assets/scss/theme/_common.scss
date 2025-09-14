@@ -1,0 +1,99 @@
+@use '../utils' as *;
+
+
+/*----------------------------------------*/
+/*  1.2 Common Classes
+/*----------------------------------------*/
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+img{
+	max-width: 100%;
+}
+.wid-100{
+	width: 100%;
+}
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+.z-index-2{
+	z-index: 2;
+}
+.z-index-11{
+	z-index: 11;
+}
+.br{
+	&-16{
+		border-radius: 16px;
+		& img{
+			border-radius: 16px;
+		}
+	}
+}
+.section-padding{
+	padding: 100px 0;
+	&-2{
+		padding: 70px 0;
+	}
+}
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+
+.tf-white{
+	color: var(--tf-white-color);
+}
+
+.tf-upper{
+	text-transform: uppercase;
+}
+
+.tf-fs{
+	&-20{
+		font-size: 20px;
+	}
+}
+
+.tf-slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+
+.tf-brand-slide-element {
+	width: auto;
+	display: inline-block;
+}
+
+.bg-fix{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}

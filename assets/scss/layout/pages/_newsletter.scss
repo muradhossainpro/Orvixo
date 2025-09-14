@@ -1,0 +1,38 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.4 Contact
+/*----------------------------------------*/
+
+.tf-newsletter{
+    &-bg{
+        background-color: var(--tf-secondary-color);
+        padding: 80px;
+        border-radius: 20px;
+    }
+    &-back{
+        color: var(--tf-white-color);
+        font-size: 100px;
+        opacity: 0.1;
+        position: absolute;
+        left: 83px;
+        bottom: -15px;
+        line-height: 1;
+        margin: 0;
+    }
+    &-box{
+        & form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    &-input{
+        width: calc(100% - 205px);
+        z-index: 9;
+        & input{
+            color: var(--tf-white-color);
+            z-index: 99;
+        }
+    }
+}

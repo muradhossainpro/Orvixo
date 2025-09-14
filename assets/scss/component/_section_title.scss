@@ -1,0 +1,31 @@
+@use '../utils' as *;
+
+// /*----------------------------------------*/
+// /*  6.4 Contact
+// /*----------------------------------------*/
+
+.tf-section{
+    &-title{
+        color: var(--tf-black-color);
+        font-weight: 600;
+        font-size: 48px;
+        margin-bottom: 20px;
+        &-2{
+            color: var(--tf-white-color);
+        }
+        &-pre{
+            color: var(--tf-secondary-color);
+            font-family: var(--tf-ff-heading);
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+}
