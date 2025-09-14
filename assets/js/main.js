@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /***************************************************
 ==================== JS INDEX ======================
 ****************************************************
@@ -203,25 +202,6 @@
 
 	////////////////////////////////////////////////////
 	13. //Back To Top Js
-=======
-(function ($) {
-    "use strict";
-
-
-    var windowOn = $(window);
-
-    windowOn.on('load', function () {
-      wowAnimation();
-    }); 
-
-    // preloader 
-    windowOn.on('load',function() {
-      $("#loading").fadeOut(400);
-    })
-
-
-    // back-to-top
->>>>>>> 683437c37252a49fc4a7994143084d15293c4d42
     var btn = $('#back-to-top');
     windowOn.scroll(function() {
       if (windowOn.scrollTop() > 300) {
