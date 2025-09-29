@@ -18,6 +18,12 @@
                     display: inline-block;
                     position: relative;
                     margin: 0 25px;
+                    @media #{$xxl}{
+                        margin: 0 19px;
+                        }
+                    @media #{$xl}{
+                        margin: 0 15px;
+                        }
                     & >a{
                     font-size: 20px;
                     color: var(--tf-white-color);
@@ -124,6 +130,9 @@
     }
     &-pad{
         padding: 0 100px;
+        @media #{$xl}{
+            padding: 0 50px;
+         }
     }
     &-3{
         &-border{

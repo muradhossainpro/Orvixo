@@ -175,6 +175,9 @@
                  @media #{$xxl}{
                     right: 25%;
                     }
+                 @media #{$xl}{
+                    right: 23%;
+                    }
                 &-title{
                     font-size: 75px;
                     color: var(--tf-black-color);
@@ -224,8 +227,12 @@
             transition: .3s;
             z-index: 9;
             @media #{$xxl}{
-                    left: 20px;
+                    left: 5px;
                     top: 45%;
+                    }
+            @media #{$xl}{
+                    left: 5px;
+                    top: 50%;
                     }
             &-prev{
                 left: auto;
