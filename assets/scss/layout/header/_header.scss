@@ -24,6 +24,9 @@
                     @media #{$xl}{
                         margin: 0 15px;
                         }
+                    @media #{$lg}{
+                        margin: 0 9px;
+                        }
                     & >a{
                     font-size: 20px;
                     color: var(--tf-white-color);
@@ -103,16 +106,6 @@
             }
         }
     }
-    &-sidebar{
-        &-line{
-            width: 30px;
-            height: 3px;
-            background-color: var(--tf-white-color);
-            display: block;
-            margin: 6px auto;
-            transition: all 0.3s ease-in-out;
-        }
-    }
     &-transparent{
         background: transparent;
         position: absolute;
@@ -132,6 +125,9 @@
         padding: 0 100px;
         @media #{$xl}{
             padding: 0 50px;
+         }
+        @media #{$lg}{
+            padding: 0;
          }
     }
     &-3{

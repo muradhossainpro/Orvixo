@@ -178,6 +178,10 @@
                  @media #{$xl}{
                     right: 23%;
                     }
+                 @media #{$lg}{
+                    top: 21%;
+                    right: 28%;
+                    }
                 &-title{
                     font-size: 75px;
                     color: var(--tf-black-color);
@@ -233,6 +237,12 @@
             @media #{$xl}{
                     left: 5px;
                     top: 50%;
+                    }
+            @media #{$lg}{
+                    left: auto;
+                    top: auto;
+                    bottom: 50px;
+                    right: 140px;
                     }
             &-prev{
                 left: auto;

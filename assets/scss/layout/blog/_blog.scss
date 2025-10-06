@@ -35,10 +35,16 @@
             z-index: 9;
             padding: 20px;
             text-align: center;
+            @media #{$xl}{
+                    top: 35%;
+                    }
             & span{
                 color: var(--tf-white-color);
                 margin-right: 40px;
                 font-size: 20px;
+                @media #{$xl}{
+                     margin-right: 15px;
+                    }
                 & i{
                     color: var(-tf-secondary-color);
                     margin-right: 10px;

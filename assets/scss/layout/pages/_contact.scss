@@ -5,6 +5,11 @@
 /*----------------------------------------*/
 
 .tf-contact{
+    &-wrapper{
+        @media #{$lg}{
+            margin-right: 0;
+        }
+    }
     &-box{
         background-color: var(--tf-white-color);
         padding: 80px 80px 75px;
@@ -16,9 +21,15 @@
         padding: 34px 105px 30px 30px;
         border: 1px solid #E3E3E3;
         border-radius: 5px;
+        @media #{$lg}{
+                    padding: 32px 15px;
+                }
         &-icon{
             color: var(--tf-primary-color);
             font-size: 40px;
+            @media #{$lg}{
+                margin-right: 18px;
+                }
         }
     }
     &-content{

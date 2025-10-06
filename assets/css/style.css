@@ -4331,10 +4331,20 @@ img {
   padding: 20px;
   text-align: center;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tfblog__meta-2 {
+    top: 35%;
+  }
+}
 .tfblog__meta-2 span {
   color: var(--tf-white-color);
   margin-right: 40px;
   font-size: 20px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tfblog__meta-2 span {
+    margin-right: 15px;
+  }
 }
 .tfblog__meta-2 span i {
   color: var(-tf-secondary-color);
@@ -4710,6 +4720,11 @@ img {
     margin: 0 15px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-header-main-menu ul > li {
+    margin: 0 9px;
+  }
+}
 .tf-header-main-menu ul > li > a {
   font-size: 20px;
   color: var(--tf-white-color);
@@ -4782,14 +4797,6 @@ img {
 .tf-header-main-menu ul > li:hover > a {
   color: var(--tf-primary-color);
 }
-.tf-header-sidebar-line {
-  width: 30px;
-  height: 3px;
-  background-color: var(--tf-white-color);
-  display: block;
-  margin: 6px auto;
-  transition: all 0.3s ease-in-out;
-}
 .tf-header-transparent {
   background: transparent;
   position: absolute;
@@ -4809,6 +4816,11 @@ img {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tf-header-pad {
     padding: 0 50px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-header-pad {
+    padding: 0;
   }
 }
 .tf-header-3-border {
@@ -5056,6 +5068,12 @@ img {
     right: 23%;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-hero-shape-1 {
+    top: 21%;
+    right: 28%;
+  }
+}
 .tf-hero-shape-1-title {
   font-size: 75px;
   color: var(--tf-black-color);
@@ -5113,6 +5131,14 @@ img {
   .tf-hero-arrow {
     left: 5px;
     top: 50%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-hero-arrow {
+    left: auto;
+    top: auto;
+    bottom: 50px;
+    right: 140px;
   }
 }
 .tf-hero-arrow-prev {
@@ -5246,12 +5272,26 @@ img {
   right: 32px;
   z-index: 2;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-about-shape-1 {
+    bottom: 0;
+    right: 130px;
+  }
+}
 .tf-about-shape-2 {
   position: absolute;
   bottom: -100px;
   left: 0;
   z-index: -1;
   animation: tfleftright 1.5s infinite alternate;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-about-shape-2 {
+    bottom: inherit;
+    left: inherit;
+    top: 0;
+    right: 170px;
+  }
 }
 .tf-about-exprence {
   background: var(--tf-white-color);
@@ -5264,6 +5304,11 @@ img {
   top: 40px;
   z-index: 99;
   animation: tfupdown 1s infinite alternate;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-about-exprence {
+    top: 0;
+  }
 }
 .tf-about-exprence-title {
   font-size: 80px;
@@ -5403,6 +5448,11 @@ img {
 /*----------------------------------------*/
 /*  6.4 Contact
 /*----------------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-contact-wrapper {
+    margin-right: 0;
+  }
+}
 .tf-contact-box {
   background-color: var(--tf-white-color);
   padding: 80px 80px 75px;
@@ -5415,9 +5465,19 @@ img {
   border: 1px solid #E3E3E3;
   border-radius: 5px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-contact-item {
+    padding: 32px 15px;
+  }
+}
 .tf-contact-item-icon {
   color: var(--tf-primary-color);
   font-size: 40px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tf-contact-item-icon {
+    margin-right: 18px;
+  }
 }
 .tf-contact-content-title {
   font-size: 20px;
@@ -5968,6 +6028,7 @@ img {
 /*----------------------------------------*/
 .tfteam__image img {
   border-radius: 8px;
+  width: 100%;
 }
 .tfteam__title {
   font-size: 24px;
@@ -6011,6 +6072,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  width: 100%;
 }
 .tfteam__social-2 a {
   color: var(--tf-primary-color);
