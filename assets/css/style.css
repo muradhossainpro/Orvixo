@@ -4818,13 +4818,17 @@ img {
     padding: 0 50px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .tf-header-pad {
     padding: 0;
   }
 }
 .tf-header-3-border {
   border-bottom: 1px solid var(--tf-border-color);
+}
+.tf-header-bar img {
+  width: 80px;
+  padding: 36px 0;
 }
 
 .tf-header-sticky {

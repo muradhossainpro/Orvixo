@@ -126,13 +126,19 @@
         @media #{$xl}{
             padding: 0 50px;
          }
-        @media #{$lg}{
+        @media #{$lg,$md}{
             padding: 0;
          }
     }
     &-3{
         &-border{
             border-bottom: 1px solid var(--tf-border-color);
+        }
+    }
+    &-bar{
+        & img{
+            width: 80px;
+            padding: 36px 0;
         }
     }
 }
