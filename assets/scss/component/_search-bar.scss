@@ -1,4 +1,4 @@
-// @use '../../utils' as *;
+@use '../utils' as *;
 
 // /*----------------------------------------*/
 // /*  6.4 Contact
@@ -48,5 +48,13 @@
         transform: rotate(90deg);
         color: var(--tf-primary-color);
             }
+        @media #{$sm}{
+          top: 35px;
+            }
+    }
+    &-bar{
+        &-title{
+            font-size: 37px;
+        }
     }
 }

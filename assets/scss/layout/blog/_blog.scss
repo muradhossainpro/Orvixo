@@ -10,8 +10,15 @@
         border-radius: var(--tf-border-radius);
     &__content{
         padding: 30px;
+        @media #{$md,$xs}{
+          padding: 10px;
+        }
         &-2{
             padding-top: 60px;
+            @media #{$md,$xs}{
+                padding-top: 30px;
+                padding-bottom: 30px;
+                }     
             & p{
                 font-size: 19px;
             }
@@ -21,6 +28,9 @@
         margin-bottom: 15px;
         & span{
             margin-right: 40px;
+            @media #{$xl,$md,$xs}{
+                margin-right: 25px;
+                }
             & i{
                 color: var(--tf-primary-color);
                 margin-right: 8px;
@@ -29,14 +39,23 @@
         &-2{
             background: var(--tf-black-color);
             position: absolute;
-            top: 45%;
+            top: 77%;
             left: 0;
             right: 0;
             z-index: 9;
             padding: 20px;
             text-align: center;
             @media #{$xl}{
-                    top: 35%;
+                     top: 71%;
+                    }
+            @media #{$md}{
+                     top: 69%;
+                    }
+                     @media #{$xs}{
+                     top: 75%;
+                    }
+            @media #{$sm}{
+                     top: 80%;
                     }
             & span{
                 color: var(--tf-white-color);
@@ -44,6 +63,13 @@
                 font-size: 20px;
                 @media #{$xl}{
                      margin-right: 15px;
+                    }
+                @media #{$md}{
+                     margin-right: 5px;
+                    }
+                @media #{$xs}{
+                     font-size: 17px;
+                     margin-right: 5px;
                     }
                 & i{
                     color: var(-tf-secondary-color);
@@ -82,16 +108,16 @@
         overflow: hidden;
         &::after{
                 position: absolute;
-                top: 0;
-                left: -100%;
-                display: block;
                 content: "";
                 width: 50%;
                 height: 100%;
+                top: 0;
+                left: 0;
                 background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
                 background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
                 -webkit-transform: skewX(-25deg);
                 transform: skewX(-25deg);
+                opacity: 0;
                 z-index: 1;
             }
         & img{
@@ -100,6 +126,9 @@
         }
     }
     &__title{
+            @media #{$xl}{
+                font-size: 22px;
+            }
         &:hover{
             opacity: 0.7;
         }
@@ -108,7 +137,8 @@
         & .tfblog{
             &__image{
                 &::after{
-                    animation: shine 1.5s;
+                    animation: shine 1.5s linear infinite;
+                    opacity: 1;
                 }
             }
         }
@@ -137,6 +167,18 @@
         width: 123px;
         display: block;
         padding: 15px 30px;
+         @media #{$xl,$md}{
+                top: 32%;
+            }
+             @media #{$lg}{
+                top: 40%;
+            }
+             @media #{$sm}{
+                top: 49%;
+            }
+             @media #{$xs}{
+                top: 26%;
+            }
         }
     }
     &-sidebar{
@@ -216,6 +258,9 @@
             text-align: center;
             border-radius: 20px;
             padding: 60px;
+             @media #{$xs}{
+               padding: 10px;
+                }
             & i{
                 font-size: 50px;
                 margin-bottom: 25px;
@@ -241,11 +286,18 @@
                 margin-bottom: 60px;
                 &.children{
                     margin-left: 100px;
+                    @media #{$xs}{
+                        margin-left: 0;
+                        }
                 }
             }
         }
         &-thumb{
             float: left;
+             @media #{$xs}{
+               float: none;
+               margin-bottom: 20px;
+                }
             & img{
                 width: 120px;
                 height: 120px;

@@ -64,13 +64,13 @@
 
   /* TF SLINE EFFECT */ 
     @keyframes shine {
-    0% {
-      left: -75%;
+      0% {
+        left: -50%;
+      }
+      100% {
+        left: 150%;
+      }
     }
-    100% {
-      left: 125%;
-    }
-  }
 
 /* TF UPDOWN */
 @keyframes tfupdown {

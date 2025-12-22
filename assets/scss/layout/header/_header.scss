@@ -22,7 +22,7 @@
                         margin: 0 19px;
                         }
                     @media #{$xl}{
-                        margin: 0 15px;
+                        margin: 0 14px;
                         }
                     @media #{$lg}{
                         margin: 0 9px;
@@ -126,7 +126,7 @@
         @media #{$xl}{
             padding: 0 50px;
          }
-        @media #{$lg,$md}{
+        @media #{$lg,$md,$sm,$xs}{
             padding: 0;
          }
     }
@@ -138,7 +138,13 @@
     &-bar{
         & img{
             width: 80px;
-            padding: 36px 0;
+            padding: 30px 0;
+            transform: translateY(-8px);
+        }
+    }
+    &-btn{
+        @media #{$lg}{
+          margin-left: 28px;
         }
     }
 }
@@ -166,12 +172,26 @@
     left: 0;
     width: 810px;
     background: var(--tf-white-color);
-    padding: 25px;
+    padding: 15px;
     padding-bottom: 0;
     box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
     opacity: 0;
     visibility: hidden;
     @include transition(.3s);
+    @media #{$xl}{
+        width: 700px;
+    }
+    @media #{$lg}{
+        width: 600px;
+    }
+    @media #{$md,$xs}{
+        width: auto;
+        opacity: 1;
+        visibility: visible;
+        transition: none;
+        position: static;
+        display: none;
+    }
   }
   .tf-home{
     &-thumb{
@@ -213,6 +233,13 @@
             text-transform: uppercase;
             padding: 15px 30px;
             border-radius: var(--tf-border-radius);
+            @media #{$sm,$md}{
+                  padding: 10px;
+                }
+            @media #{$xs}{
+                  padding: 10px;
+                  font-size: 15px;
+                }
             &:hover{
                 color: var(--tf-white-color);
             }

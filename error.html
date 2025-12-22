@@ -38,19 +38,19 @@
     <div id="tf-header-sticky" class="tf-header-area tf-header-pad tf-header-transparent tf-sticky-black">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-lg-2 col-md-3 col-6">
                     <div class="tf-header-logo">
                         <a href="index.html"><img src="assets/img/logo/logo1.png" alt="logo"></a>
                     </div>
                 </div>
-                <div class="col-xl-8">
-                    <div class="tf-header-main-menu">
-                        <nav>
+                <div class="col-xl-7 col-lg-7 col-md-2 d-none d-md-block">
+                    <div class="tf-header-main-menu d-none d-lg-block">
+                        <nav class="tf-mobile-menu-active">
                             <ul>
                                 <li class="has-dropdown"><a href="index.html">Home</a>
                                     <div class="tf-mega-menu">
                                         <div class="tf-home-menu">
-                                            <div class="row gx-6 row-cols-2 row-cols-md-2 row-cols-xl-3">
+                                            <div class="row gx-6 row-cols-2 row-cols-lg-3">
                                                 <div class="col mb-25">
                                                     <div class="tf-home-thumb p-relative">
                                                         <img src="assets/img/demo/home-1.jpg" alt="">
@@ -111,20 +111,18 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-3 col-lg-3 col-md-7 col-6">
                     <div class="tf-header-right d-flex align-items-center justify-content-end">
-                        <div class="tf-header-search">
+                        <div class="tf-header-search d-none d-sm-block">
                             <button  class="tf-search-toggle" type="button"><i class="fal fa-search"></i></button>
                         </div>
-                        <div class="tf-header-sidebar">
-                            <div class="tf-header-sidebar-toggle ml-30 d-lg-none">
-                                <span class="tf-header-sidebar-line"></span>
-                                <span class="tf-header-sidebar-line"></span>
-                                <span class="tf-header-sidebar-line"></span>
-                            </div>
-                        </div>
-                        <div class="tf-header-btn p-relative ml-35">
+                        <div class="tf-header-btn p-relative ml-35 d-none d-md-block">
                             <a href="#" class="tf-btn">Contact Us</a>
+                        </div>
+                        <div class="tf-header-bar ml-40 d-lg-none">
+                            <button class="tf-offcanvas-toogle">
+                                <img src="assets/img/shape/bar.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -132,7 +130,7 @@
         </div>
     </div>
 </header>
-<!-- TF DEADER END -->
+<!-- TF HEADER END -->
 
 <!-- TF HEADER SEARCH -->
 <div class="tf-header-search-bar d-flex align-items-center">
@@ -153,6 +151,47 @@
         </div>
     </div>
 </div>
+
+<!-- TF OFFCANVAS -->
+<div class="tf-offcanvas">
+    <div class="tf-offcanvas-wrapper">
+        <div class="tf-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+            <div class="tf-offcanvas-logo">
+                <a href="index.html"><img src="assets/img/logo/logo1.png" alt=""></a>
+            </div>
+            <div class="tf-offcanvas-close">
+                <button class="tf-offcanvas-close-toggle"><i class="fal fa-times"></i></button>
+            </div>
+        </div>
+        <div class="tf-offcanvas-menu d-lg-none mb-50">
+            <nav></nav>
+        </div>
+    <div class="tf-offcanvas-content mb-50 d-none d-lg-block">
+        <h2 class="tf-offcanvas-title">Hello There!</h2>
+        <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit. </p>
+    </div>
+    <div class="tf-offcanvas-gallery mb-50">
+        <a class="popup-image" href="assets/img/portfolio/p1.jpg"><img src="assets/img/portfolio/p1.jpg" alt=""></a>
+        <a class="popup-image" href="assets/img/portfolio/p2.jpg"><img src="assets/img/portfolio/p2.jpg" alt=""></a>
+        <a class="popup-image" href="assets/img/portfolio/p3.jpg"><img src="assets/img/portfolio/p3.jpg" alt=""></a>
+        <a class="popup-image" href="assets/img/portfolio/p4.jpg"><img src="assets/img/portfolio/p4.jpg" alt=""></a>
+    </div>
+    <div class="tf-offcanvas-info mb-50">
+        <h3 class="tf-offcanvas-sm-title">Information</h3>
+        <span><a href="tel:+8801608456553">+88016 0845 6553</a></span>
+        <span><a href="mailto:mdmuraddev400@gmail.com">mdmuraddev400@gmail.com</a></span>
+        <span><a href="#">Boulevard Saint-Germain 221, Paris</a></span>
+    </div>
+    <div class="tf-offcanvas-social mb-50">
+        <h3 class="tf-offcanvas-sm-title">Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    </div>
+</div>
+<div class="tf-offcanvas-overlay"></div>
 
 <main>
 <!--TF BREADCRUMB AREA START-->
@@ -186,7 +225,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="tf-error-image br-16 wow img-custom-anim-top" data-wow-duration="2s" data-wow-delay="0.3s">
+                    <div class="tf-error-image mb-30 br-16 wow img-custom-anim-top" data-wow-duration="2s" data-wow-delay="0.3s">
                         <a href="#"><img src="assets/img/bg/error.jpg" alt=""></a>
                     </div>
                 </div>
@@ -307,94 +346,96 @@
 </main>
 
 <!-- TF FOOTER AREA START -->
-<footer class="tf-footer-area p-relative" data-bg-color="#16243E">
-    <div class="tf-footer-shape">
-        <div class="tf-footer-shape-1">
-            <img src="assets/img/shape/h2-shape1.png" alt="">
-        </div>
-        <div class="tf-footer-shape-2">
-            <img src="assets/img/shape/h2-shape2.png" alt="">
-        </div>
-        <div class="tf-footer-shape-3">
-            <img src="assets/img/shape/h2-shape3.png" alt="">
-        </div>
-        <div class="tf-footer-shape-4">
-            <img src="assets/img/shape/h2-shape4.png" alt="">
-        </div>
-    </div>
- <div class="container">
-    <div class="tf-footer-widget-area section-padding">
-        <div class="row">
-            <div class="col-xl-4">
-                <div class="tf-footer-widget">
-                    <div class="tf-footer-widget-logo mb-25">
-                        <a href="#"><img src="assets/img/logo/logo1.png" alt=""></a>
-                    </div>
-                    <p class="tf-white">Step into the future of shopping with us. Smooth browsing, effortless checkout simple, seamless, and stress-free.</p>
-                     <div class="tf-footer-social mt-25">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-behance"></i></a>
-                     </div>
-                </div>
+<footer>
+    <div class="tf-footer-area p-relative" data-bg-color="#16243E">
+        <div class="tf-footer-shape">
+            <div class="tf-footer-shape-1">
+                <img src="assets/img/shape/h2-shape1.png" alt="">
             </div>
-            <div class="col-xl-2">
-                <div class="tf-footer-widget">
-                    <h5 class="tf-footer-widget-title mb-20">Useful Links</h5>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>About Us</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>News Report</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Company Partners</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Latest News</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Our Gallery</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Contact Us</a></li>
-                    </ul>
-                </div>
+            <div class="tf-footer-shape-2">
+                <img src="assets/img/shape/h2-shape2.png" alt="">
             </div>
-            <div class="col-xl-2">
-                <div class="tf-footer-widget">
-                    <h5 class="tf-footer-widget-title mb-20">Help Center</h5>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>FAQ</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Terms & conditions</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Reporting</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Documention</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Support Policy</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Privacy</a></li>
-                    </ul>
-                </div>
+            <div class="tf-footer-shape-3">
+                <img src="assets/img/shape/h2-shape3.png" alt="">
             </div>
-            <div class="col-xl-4">
-                <div class="tf-footer-widget">
-                    <h5 class="tf-footer-widget-title mb-20">Newsletter</h5>
-                    <p class="tf-white mb-30">It's important for businesses to carefully consider their pay.
-                         Businesses must thoughtfully review their, compensation Companies should carefully evaluate employee salaries</p>
-                    <div class="tf-footer-widget-input p-relative">
-                        <input type="email" placeholder="Your Email">
-                        <button><span><i class="fas fa-paper-plane"></i></span></button>
-                    </div>
-                </div>
+            <div class="tf-footer-shape-4">
+                <img src="assets/img/shape/h2-shape4.png" alt="">
             </div>
         </div>
-    </div>
- </div>
-     <div class="tf-footer-copyright-area">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="tf-footer-copyright">
-                        <p>© 2025 Copyright <a href="#">Orvixo</a>. All rights reserved</p>
+            <div class="tf-footer-widget-area section-padding">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="tf-footer-widget p-relative z-index-11">
+                            <div class="tf-footer-widget-logo mb-25">
+                                <a href="#"><img src="assets/img/logo/logo1.png" alt=""></a>
+                            </div>
+                            <p class="tf-white">Step into the future of shopping with us. Smooth browsing, effortless checkout simple, seamless, and stress-free.</p>
+                            <div class="tf-footer-social mt-25">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 col-6">
+                        <div class="tf-footer-widget p-relative z-index-11">
+                            <h5 class="tf-footer-widget-title mb-20">Useful Links</h5>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>About Us</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>News Report</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i> Company Partners</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>Latest News</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>Our Gallery</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-6">
+                        <div class="tf-footer-widget p-relative z-index-11">
+                            <h5 class="tf-footer-widget-title mb-20">Help Center</h5>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>FAQ</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>Terms & conditions</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>Reporting</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>Documention</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>Support Policy</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i>Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-8">
+                        <div class="tf-footer-widget p-relative z-index-11">
+                            <h5 class="tf-footer-widget-title mb-20">Newsletter</h5>
+                            <p class="tf-white mb-30">It's important for businesses to carefully consider their pay.
+                                Businesses must thoughtfully review their, compensation Companies should carefully evaluate employee salaries</p>
+                            <div class="tf-footer-widget-input p-relative">
+                                <input type="email" placeholder="Your Email">
+                                <button><span><i class="fas fa-paper-plane"></i></span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-8">
-                    <div class="tf-footer-menu text-end">
-                        <ul>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">our FAq </a></li>
-                            <li><a href="#">privacy & policy</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
+            </div>
+        </div>
+        <div class="tf-footer-copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-5">
+                        <div class="tf-footer-copyright text-center text-md-start">
+                            <p>© 2025 Copyright <a href="#">Orvixo</a>. All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8 col-md-7">
+                        <div class="tf-footer-menu text-center text-md-end">
+                            <ul>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">our FAq </a></li>
+                                <li><a href="#">privacy & policy</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

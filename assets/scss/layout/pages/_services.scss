@@ -9,7 +9,16 @@
     border-radius: 5px;
     padding: 40px;
     transition: .3s;
+    @media #{$md}{
+             padding: 20px 10px;
+         }
+          @media #{$xs}{
+             padding: 30px 20px;
+         }
     &__2{
+         @media #{$xl}{
+             padding: 30px 15px;
+         }
         &::before{
             background: var(--tf-secondary-color);
             height: 4px;
@@ -48,6 +57,7 @@
             overflow: hidden;
             border-radius: 8px 8px 0 0;
         & img{
+            width: 100%;
             border-radius: 8px 8px 0 0;
             transition: .3s;
         }
@@ -107,6 +117,14 @@
         &-next{
             background-color: var(--tf-primary-color);
         }
+        &-wrapper{
+            @media #{$md,$xs}{
+                margin-bottom: 40px;
+            }
+            @media #{$sm}{
+                transform: translateY(-100px) translatex(30px);
+            }
+        }
     }
     &-widget{
         padding: 50px 30px;
@@ -161,6 +179,9 @@
                 font-size: 26px;
                 display: block;
                 font-weight: 700;
+                @media #{$md}{
+                    font-size: 24px;
+                    } 
             }
         }
         &-feature{
@@ -191,6 +212,11 @@
                     display: inline-block;
                 }
             }
+        }
+        &-wrapper{
+            @media #{$xs}{
+                 margin-left: 0;
+                    } 
         }
     }
 }

@@ -9,6 +9,12 @@
         background-color: var(--tf-secondary-color);
         padding: 80px;
         border-radius: 20px;
+        @media #{$sm}{
+                padding: 60px 30px;
+            }
+        @media #{$xs}{
+                padding: 30px 10px;
+            }
     }
     &-back{
         color: var(--tf-white-color);
@@ -19,17 +25,39 @@
         bottom: -15px;
         line-height: 1;
         margin: 0;
+        @media #{$md}{
+          font-size: 80px;
+          left: 0;
+          bottom: -10px;
+        }
+        @media #{$sm}{
+                font-size: 55px;
+                left: 0;
+                bottom: 0;
+            }
+        @media #{$xs}{
+                font-size: 60px;
+                left: 0;
+                bottom: 90px;
+            }
     }
     &-box{
         & form{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            @media #{$xs}{
+               display: block;
+            }
         }
     }
     &-input{
         width: calc(100% - 205px);
         z-index: 9;
+        @media #{$xs}{
+            width: 100%;
+            margin-bottom: 35px;
+            }
         & input{
             color: var(--tf-white-color);
             z-index: 99;

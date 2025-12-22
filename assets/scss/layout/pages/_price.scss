@@ -9,6 +9,12 @@
     border-radius: 25px;
     padding: 20px;
     transition: 0.3s;
+    @media #{$xl}{
+            padding: 15px;
+            }
+            @media #{$md,$xs}{
+            padding: 20px 10px;
+            }
     &:hover{
         background-color: var(--tf-gray-color-2);
     }
@@ -46,6 +52,9 @@
         font-size: 20px;
         margin-bottom: 25px;
         display: inline-block;
+         @media #{$md,$xs}{
+           font-size: 17px;
+         }
     }
     &__feature{
         & ul{

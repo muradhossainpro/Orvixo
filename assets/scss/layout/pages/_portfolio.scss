@@ -62,11 +62,19 @@
             margin: 0;
             font-size: 18px;
         }
+        @media #{$md,$xs}{
+            padding: 10px;
+            margin: 10px;
+            }
     }
     &__title{
         font-size: 24px;
         text-transform: uppercase;
         font-weight: 400;
+        @media #{$xs}{
+           font-size: 20px;
+           margin-bottom: 3px;
+            }
         &-2{
             &:hover{
                 color: var(--tf-primary-color);
@@ -107,6 +115,15 @@
             padding: 0px 10px;
             margin: 0 10px;
             text-transform: uppercase;
+            @media #{$md}{
+                font-size: 20px;
+                margin: 0 2px;
+                }
+            @media #{$xs}{
+                font-size: 15px;
+                margin: 0 2px;
+                margin-bottom: 14px;
+                }
             &.active{
                 color: var(--tf-primary-color);
             }
@@ -117,10 +134,23 @@
                 color: var(--tf-black-color);
                 padding: 15px 30px;
                 border-radius: 30px;
+                @media #{$md}{
+                    padding: 15px 25px;
+                }
+                @media #{$xs}{
+                    padding: 5px 10px;
+                    border-radius: var(--tf-border-radius);
+                }
                 &.active{
                     background-color: var(--tf-black-color);
                     color: var(--tf-primary-color);
                 }
+                @media #{$sm}{
+                    font-size: 15px;
+                    padding: 15px 14px;
+                    border-radius: var(--tf-border-radius);
+                    margin: 0 5px;
+            }
             }
         }
     }

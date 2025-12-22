@@ -47,8 +47,14 @@ img{
 }
 .section-padding{
 	padding: 100px 0;
+	@media #{$xs}{
+            padding: 50px 0;
+            }
 	&-2{
 		padding: 70px 0;
+			@media #{$xs}{
+            padding: 50px 0;
+            }
 	}
 }
 .overflow-y-visible{
@@ -89,6 +95,7 @@ img{
 	width: auto;
 	display: inline-block;
 }
+
 .bg-fix{
 	background-repeat: no-repeat;
 	background-position: center center;

@@ -7,11 +7,11 @@
 
 .tf-offcanvas {
 	position: fixed;
-	z-index: 999;
+	z-index: 99999;
 	background: var(--tf-white-color);
 	width: 400px;
 	right: 0;
-	top: 92px;
+	top: 0;
 	padding: 50px 40px;
     height: 100%;
     opacity: 0;
@@ -32,11 +32,12 @@
     }
     &-close-toggle {
         font-size: 29px;
-        color: var(--black-clr);
+        color: var(--tf-black-color);
         transition: .3s;
         top: 0;
         position: relative;
         &:hover{
+            color: var(--tf-primary-color);
             transform: rotate(90deg);
         }
     }
@@ -59,7 +60,7 @@
             display: block;
             margin-bottom: 5px;
             &:hover{
-                color: var(--theme-clr);
+                color: var(--tf-primary-color);
             } 
         }
     }
@@ -79,9 +80,9 @@
             border: 1px solid rgba(2, 11, 24, 0.1);
             font-size: 14px;
             &:hover{
-                background-color: var(--theme-clr-2);
-                color: var(--white-clr);
-                border-color: var(--theme-clr-2);
+                background-color: var(--tf-secondary-color);
+                color: var(--tf-white-color);
+                border-color: var(--tf-secondary-color);
             } 
         }
     }

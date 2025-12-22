@@ -10,6 +10,18 @@
         font-weight: 600;
         font-size: 48px;
         margin-bottom: 20px;
+        @media #{$xl}{
+                font-size: 41px;
+            }
+            @media #{$lg}{
+                font-size: 44px;
+            }
+        @media #{$sm}{
+                font-size: 40px;
+            }
+        @media #{$xs}{
+                font-size: 29px;
+            }
         &-2{
             color: var(--tf-white-color);
         }
